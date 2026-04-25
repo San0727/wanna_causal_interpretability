@@ -4,9 +4,11 @@ This repository contains the code and data for the following paper:
 
 > **Do Large Language Models Internalize Syntactic Constraints? A Causal Intervention Study of *Wanna* Contraction**
 
+
 ## Overview
 
 This study investigates whether large language models have internalized the syntactic constraints governing *wanna* contraction using causal interpretability methods. We adapt the [CausalGym](https://github.com/aryamanarora/causalgym) framework (Arora et al., 2024) and apply it to the [Pythia](https://github.com/EleutherAI/pythia) model family (Biderman et al., 2023), ranging from 14M to 2.8B parameters.
+
 
 ## Repository Structure
 
@@ -18,6 +20,7 @@ wanna_causal_interpretability/
 ├── test_all_directional.py            # Run all experiments
 └── causalgym_directional.py           # Google Colab notebook
 ```
+
 
 ## Requirements
 
@@ -42,6 +45,7 @@ tqdm==4.66.6
 transformers==4.46.2
 ```
 
+
 ## Usage
 
 Place `wanna_contraction.json` in the `data/templates/` directory of the CausalGym repository, then run the following commands:
@@ -60,10 +64,12 @@ python test_all_directional.py --model EleutherAI/pythia-1b \
 
 For Google Colab users, `causalgym_directional.py` provides a step-by-step pipeline for running the experiments.
 
+
 ## Citation
 
 If you use this code or data, please cite the original CausalGym paper upon which this study is based:
 
+```bibtex
 @inproceedings{arora-etal-2024-causalgym,
     title = "{C}ausal{G}ym: Benchmarking causal interpretability methods on linguistic tasks",
     author = "Arora, Aryaman and Jurafsky, Dan and Potts, Christopher",
@@ -77,3 +83,4 @@ If you use this code or data, please cite the original CausalGym paper upon whic
     doi = "10.18653/v1/2024.acl-long.785",
     pages = "14638--14663"
 }
+```
