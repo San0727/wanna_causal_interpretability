@@ -59,28 +59,3 @@ python test_all_directional.py --model EleutherAI/pythia-1b \
 ```
 
 For Google Colab users, `causalgym_directional.py` provides a step-by-step pipeline for running the experiments.
-
-## Citation
-
-If you use this code or data, please cite the following:
-
-```
-@article{,
-  title={Do Large Language Models Internalize Syntactic Constraints? 
-         A Causal Intervention Study of Wanna Contraction},
-  journal={Lingua},
-  year={2026}
-}
-```
-
-Also please cite the original CausalGym paper:
-
-```
-@inproceedings{arora-etal-2024-causalgym,
-  title={CausalGym: Benchmarking causal interpretability methods on linguistic tasks},
-  author={Arora, Aryaman and Jurafsky, Dan and Potts, Christopher},
-  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},
-  pages={14638--14663},
-  year={2024}
-}
-```
