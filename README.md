@@ -1,4 +1,4 @@
-# wanna_causal_interpretability
+# Causal Interpretability & Wanna Contraction
 
 This repository contains the code and data for the following paper:
 
